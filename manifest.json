@@ -1,0 +1,22 @@
+{
+ "manifest_version": 2,
+ "name": "WhatsApp ++",
+ "description": "WhatsApp ++",
+ "version": "1.1",
+ "browser_action": {
+   	 "default_title": "WhatsApp ++",
+   	 "default_icon": "icon.png",
+	 "default_popup": "popup.html" 
+ },
+ "permissions": [
+    "activeTab",
+    "storage"
+  ],
+ "content_scripts": [
+     {
+         "matches": ["https://*.whatsapp.com/*"],
+	 "run_at": "document_end",
+         "js": ["jquery-1.7.1.min.js", "whatsapp.js"]
+     } 
+   ]
+}
