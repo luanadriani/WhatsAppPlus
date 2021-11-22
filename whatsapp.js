@@ -178,14 +178,14 @@ async function novaMensagem(phone, nome) {
                     chrome.storage.sync.set({'contador': contador});
 
                     phone = '';
-										nome = '';
-										$("#fundo_modal").hide();
+					nome = '';
+					$("#fundo_modal").hide();
 
                 } else {
                     alert ('Conversa antiga')
                     phone = '';
-										nome = '';
-										$("#fundo_modal").hide();
+					nome = '';
+					$("#fundo_modal").hide();
                 }
 			}, 2000);
 		}
