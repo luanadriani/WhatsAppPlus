@@ -159,7 +159,7 @@ async function novaMensagem(phone, nome) {
 					}
                     
 
-				    document.querySelector('div.p3_M1>div>div._13NKt.copyable-text.selectable-text').textContent = 'Oii ' + primeiraLetraMaiuscula(nomeGlobal) + ', ' + comprimento + '! Tudo bem? Meu nome é ' + nomeVendedor + ', sou da faculdade ' + nomeFaculdade + '. ☺️';
+				    document.querySelector('div.p3_M1>div>div._13NKt.copyable-text.selectable-text').textContent = 'Oii ' + primeiraLetraMaiuscula(nomeGlobal) + ', ' + comprimento + '! Prazer sou ' + nomeVendedor + ', da ' + nomeFaculdade + '. 🤝';
 
                     document.querySelector('div.p3_M1>div>div._13NKt.copyable-text.selectable-text').dispatchEvent(event);
 
@@ -172,15 +172,6 @@ async function novaMensagem(phone, nome) {
                     document.querySelector('div.p3_M1>div>div._13NKt.copyable-text.selectable-text').dispatchEvent(event);
 
                     document.querySelector("._4sWnG").click();
-
-
-
-                    document.querySelector('div.p3_M1>div>div._13NKt.copyable-text.selectable-text').textContent = objetoWhatsApp.pergunta;
-
-                    document.querySelector('div.p3_M1>div>div._13NKt.copyable-text.selectable-text').dispatchEvent(event);
-
-                    document.querySelector("._4sWnG").click();
-
 
                     contador++;
                     document.querySelector('#contador').textContent = contador;
